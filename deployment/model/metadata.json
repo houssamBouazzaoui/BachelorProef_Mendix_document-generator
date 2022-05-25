@@ -1,0 +1,79 @@
+{
+  "RuntimeVersion": "9.13.0.43286",
+  "ProjectID": "1bf5bad8-7225-4362-930a-2171d6eebdf6",
+  "ProjectName": "document-generator",
+  "ModelVersion": "unversioned",
+  "Description": "",
+  "AdminUser": "MxAdmin",
+  "Roles": {
+    "8dd52bfa-6d7e-453b-b506-303c0a3d9567": {
+      "Name": "Administrator",
+      "ManageableRoles": [
+        "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+        "53f5d6fa-6da9-4a71-b011-454ec052cce8"
+      ]
+    },
+    "53f5d6fa-6da9-4a71-b011-454ec052cce8": {
+      "Name": "User"
+    }
+  },
+  "AdminRole": "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+  "Constants": [
+    {
+      "Name": "Atlas_UI_Resources.Atlas_UI_Resources_Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": " 2.7.1"
+    },
+    {
+      "Name": "Templator.ApplicationURLOverrideOPTIONAL",
+      "Type": "String",
+      "Description": "By default the PDF that is generated looks for the app at Core.getApplicationRootUrl()\r\nUse this constant to change this for example to account for proxies or tunnels\r\n\r\ne.g. http:\\\\example.ngrok.io",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "Templator.EncryptionKey",
+      "Type": "String",
+      "Description": "used to asymetrically encrypt data before sending it to the external templator service\r\nthis is public key, so it can not be used to decrypt the data, Therefore, it can be distributed as plain text.\r\nThere is no need to change this value unless you are hosting your own service",
+      "DefaultValue": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyJL8rsqJUokBuLIYC+uLuh4iFiECaNdN1ZLJnuQhX8ieSk2z88Q0hj1QG/X46oidoEnwvphi83Tcv6BXONwg2KIQJ/fZL4eM3a+NMTrjEJl9WiHFhMrOfS0TKAPVtO0mytoZx8JCUQ/40qlOdaBCKG6kmOBc0nH8XxMyLXwd+95ATDjY/gx4mhD3uo0WhxhPrE7BVRWYiNwV06ec6G+uVl2+e/JXwIymSCwMIehyboEtVp0jfgi6/n+P1oe8gjUJidvDmxtHy4aJ8lDp2eDjsKVdp65YH4Mc4HF3PL4uaUz4z9wckrqrDZeO8b2yY3xoz++PKJa1tlQX4+pBNZn9TwIDAQAB"
+    },
+    {
+      "Name": "Templator.ServiceEndpoint",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "https://templater.azurewebsites.net/api/generatePDF"
+    },
+    {
+      "Name": "Templator.ServiceFunctionKey",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "AJKuOxvlAvD7wRUPbqwCHD9VCnshSe1RVrbWMx51wZ8zRd/XtmRVpA=="
+    }
+  ],
+  "ScheduledEvents": [],
+  "Configuration": {
+    "SourceDatabaseType": "HSQLDB",
+    "SourceDatabaseName": "default",
+    "SourceBuiltInDatabasePath": "model/sampledata/data/database"
+  },
+  "DataBrokerConfiguration": {
+    "publishedServices": []
+  },
+  "RequestHandlers": [
+    {
+      "Name": "/api/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/link/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/p/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    }
+  ]
+}

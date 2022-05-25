@@ -1,0 +1,14 @@
+Buildfile: C:\Users\Houssam\Desktop\SCHOOL\Cursussen\jaar3\stage\mendix_app\document-generator-main\deployment\build_core.xml
+
+compile:
+    [javac] Compiling 54 source files to C:\Users\Houssam\Desktop\SCHOOL\Cursussen\jaar3\stage\mendix_app\document-generator-main\deployment\run\bin
+    [javac] Note: C:\Users\Houssam\Desktop\SCHOOL\Cursussen\jaar3\stage\mendix_app\document-generator-main\javasource\system\UserActionsRegistrar.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+
+package:
+      [jar] Building jar: C:\Users\Houssam\Desktop\SCHOOL\Cursussen\jaar3\stage\mendix_app\document-generator-main\deployment\model\bundles\project.jar
+
+BUILD SUCCESSFUL
+Total time: 1 second
+
+

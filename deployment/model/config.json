@@ -1,0 +1,20 @@
+{
+  "Configuration": {
+    "DatabaseName": "default",
+    "DatabasePassword": "",
+    "DatabaseType": "HSQLDB",
+    "DatabaseHost": "",
+    "DatabaseUserName": "",
+    "DatabaseUseIntegratedSecurity": "False",
+    "ApplicationRootUrl": "http://localhost:8080/",
+    "ScheduledEventExecution": "None"
+  },
+  "Constants": {
+    "Atlas_UI_Resources.Atlas_UI_Resources_Version": " 2.7.1",
+    "Templator.ServiceFunctionKey": "AJKuOxvlAvD7wRUPbqwCHD9VCnshSe1RVrbWMx51wZ8zRd/XtmRVpA==",
+    "Templator.ApplicationURLOverrideOPTIONAL": "",
+    "Templator.ServiceEndpoint": "https://templater.azurewebsites.net/api/generatePDF",
+    "Templator.EncryptionKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyJL8rsqJUokBuLIYC+uLuh4iFiECaNdN1ZLJnuQhX8ieSk2z88Q0hj1QG/X46oidoEnwvphi83Tcv6BXONwg2KIQJ/fZL4eM3a+NMTrjEJl9WiHFhMrOfS0TKAPVtO0mytoZx8JCUQ/40qlOdaBCKG6kmOBc0nH8XxMyLXwd+95ATDjY/gx4mhD3uo0WhxhPrE7BVRWYiNwV06ec6G+uVl2+e/JXwIymSCwMIehyboEtVp0jfgi6/n+P1oe8gjUJidvDmxtHy4aJ8lDp2eDjsKVdp65YH4Mc4HF3PL4uaUz4z9wckrqrDZeO8b2yY3xoz++PKJa1tlQX4+pBNZn9TwIDAQAB"
+  },
+  "AdminPassword": null
+}

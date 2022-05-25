@@ -1,0 +1,1 @@
+export const Templator$InvokeMicroflow = async () => (await import("C:/Users/Houssam/Desktop/SCHOOL/Cursussen/jaar3/stage/mendix_app/document-generator-main/javascriptsource/templator/actions/InvokeMicroflow")).InvokeMicroflow;
